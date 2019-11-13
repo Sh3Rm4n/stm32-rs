@@ -220,6 +220,16 @@ FPU:
         description: Floating point unit
         value: 81
 
+COMP:
+  _add:
+    _interrupts:
+      COMP2:
+        description: COMP2 interrupt combined with EXTI line 22 interrupt
+        value: 64
+      COMP4_6:
+        description: COMP4 and COMP6 interrupts combined with EXTI lines 30 and 32
+        value: 65
+
 _include:
  - common_patches/4_nvic_prio_bits.yaml
  - ./common_patches/merge_I2C_CR2_SADDx_fields.yaml
