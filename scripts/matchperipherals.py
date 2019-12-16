@@ -37,7 +37,6 @@ def process_yamlfile(svd, yamlpath, quiet):
                 continue
     return matched
 
-
 def process_device(device, ppath, quiet):
     # Load the SVD and process all modifications from the yaml
     # (but don't bother actually applying the enums/ranges).
@@ -68,7 +67,33 @@ def process_device(device, ppath, quiet):
                     continue
                 if process_yamlfile(tree, yamlpath, quiet):
                     matches.append(yamlpath)
+    print(matches)
     return matches
+
+def process_unique_yamlfile(device, new_match_peripherals_yaml_path, quiet):
+    """
+    Compare new matches with already included peripherals
+    """
+    if not quiet:
+        print("Matching new peripherals against exsisting peripherals")
+    matches_unique = []
+    # NOTE no path checking required as realpath are already established
+    already_included = svdpatch.yaml_includes(device)
+    for new_peripherals_yaml in new_match_peripherals_yaml_path:
+        # TODO Here comes the magic which compares similar yaml files
+        # - Expand wildcards of already inclueded yaml files see scripts/svdpatch.py spec_ind
+        # - Expand wildcards of new periphals yaml
+        # - Go through new peripherals
+        # Compare:
+        # - Process tree level by level (first level: GPIO, second level: Registers, third level: register description)
+        #   - compare until difference is found
+        # - if difference is found, yaml file is unique
+        if process_yamlfile(tree, new_peripherals, quiet):
+            matches_unique.append(new_peripherals)
+    return matches_unique
+
+def expand_yamlfile(yaml_path):
+    return expanded_yaml_object
 
 
 def main(dpath, ppath, update, quiet):
