@@ -69,6 +69,7 @@ _include:
  - ../peripherals/i2c/i2c_v2.yaml
  - ../peripherals/usart/usart_v2B1.yaml
  - common_patches/rtc/rtc_bkpr.yaml
+ - ../peripherals/syscfg/syscfg_exticrx_abcd.yaml
  - ../peripherals/syscfg/syscfg_f0.yaml
  - ../peripherals/adc/adc_aditf4_v1_1.yaml
  - ../peripherals/spi/spi_v2_without_UDR_CHSIDE.yaml
