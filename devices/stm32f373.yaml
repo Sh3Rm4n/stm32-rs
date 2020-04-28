@@ -130,3 +130,4 @@ _include:
  - ../peripherals/flash/flash_f3_common.yaml
  - ../peripherals/flash/flash_f3_obr_sram_parity_check.yaml
  - ../peripherals/flash/flash_f3_obr_vdd_monitor.yaml
+ - ../peripherals/syscfg/syscfg_exticrx_abcd.yaml

@@ -187,3 +187,4 @@ _include:
  - ../peripherals/tim/tim_ccm_v1.yaml
  - ../peripherals/sai/sai.yaml
  - ../peripherals/rng/rng_v1.yaml
+ - ../peripherals/syscfg/syscfg_exticrx_abcd.yaml

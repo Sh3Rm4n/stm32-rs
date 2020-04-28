@@ -273,3 +273,4 @@ _include:
  - common_patches/f3_flash_obr_rdptr.yaml
  - ../peripherals/flash/flash_f3_common.yaml
  - ../peripherals/flash/flash_f3_acr_hlfcya.yaml
+ - ../peripherals/syscfg/syscfg_exticrx_abcd.yaml
