@@ -57,3 +57,39 @@ SYSCFG:
     SRAM_PEF:
       NoParityError: [0, "No SRAM parity error detected"]
       ParityErrorDetected: [1, "SRAM parity error detected"]
+  EXTICR1:
+    EXTI0:
+      PF0: [4, "Select PE0 as the source input for the EXTI0 external interrupt"]
+    EXTI1:
+      PF1: [4, "Select PE1 as the source input for the EXTI1 external interrupt"]
+    EXTI2:
+      PF2: [4, "Select PE2 as the source input for the EXTI2 external interrupt"]
+    EXTI3:
+      PF3: [4, "Select PE3 as the source input for the EXTI3 external interrupt"]
+  EXTICR2:
+    EXTI4:
+      PF4: [4, "Select PE4 as the source input for the EXTI4 external interrupt"]
+    EXTI5:
+      PF5: [4, "Select PE5 as the source input for the EXTI5 external interrupt"]
+    EXTI6:
+      PF6: [4, "Select PE6 as the source input for the EXTI6 external interrupt"]
+    EXTI7:
+      PF7: [4, "Select PE7 as the source input for the EXTI7 external interrupt"]
+  EXTICR3:
+    EXTI8:
+      PF8: [4, "Select PE8 as the source input for the EXTI8 external interrupt"]
+    EXTI9:
+      PF9: [4, "Select PE9 as the source input for the EXTI9 external interrupt"]
+    EXTI10:
+      PF10: [4, "Select PE10 as the source input for the EXTI10 external interrupt"]
+    EXTI11:
+      PF11: [4, "Select PE11 as the source input for the EXTI11 external interrupt"]
+  EXTICR4:
+    EXTI12:
+      PF12: [4, "Select PE12 as the source input for the EXTI12 external interrupt"]
+    EXTI13:
+      PF13: [4, "Select PE13 as the source input for the EXTI13 external interrupt"]
+    EXTI14:
+      PF14: [4, "Select PE14 as the source input for the EXTI14 external interrupt"]
+    EXTI15:
+      PF15: [4, "Select PE15 as the source input for the EXTI15 external interrupt"]
